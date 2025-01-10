@@ -1,0 +1,932 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/drink.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "ドリンク｜大衆居酒屋ふくべぇ";
+const siteDomein = "https://toriyafukubee.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="2720" height="700" src={siteDomein + '20240610110737946933.png'} alt="ドリンク" class="pageHeaderImg" width="1440" height="450" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">
+                    <img src={siteDomein + '20240610110821154655.png'} alt="ドリンク" width="345" height="88">
+                </h1>
+            </div>
+        </section>
+        <section class="section featureSection sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240610110737595775.png'} alt="背景用の画像" class="img" width="1440" height="447">
+            </div>
+            <div class="featureSectionInr">
+                <div class="featureSectionInrLeft">
+                    <div class="overlayImg">
+                        <img class="smallImg" src={siteDomein + '20240610110737599407.png'} alt="" width="193" height="193">
+                        <img class="largeImg" src={siteDomein + '20240610110737706993.png'} alt="" width="487" height="342">
+                    </div>
+                </div>
+                <div class="featureSectionInrRight">
+                    <div class="featureSectionHead">
+                        <div class="featureSectionTtl">
+                            <p>大衆居酒屋ふくべぇの</p>
+                            <p class="featureSectionTtlBottom">泡の特徴</p>
+                        </div>
+                        <div class="backImg">
+                            <img class="img" src={siteDomein + '20240603224147995372.png'} alt="背景用の画像" width="394" height="378">
+                        </div>
+                    </div>
+                    <div class="featureSectionTxt">
+                        <p class="txt">
+                            大衆居酒屋ふくべぇは、サントリーの<br>抜き打ち検査に連続合格した超達人の<br>称号店です。
+                        </p>
+                        <div class="wrapTxt">
+                            <p class="txtRed">超達人店</p>
+                            <p class="txt">
+                                専用のノズルのきめ細やかな<br>泡により、ドリンクの旨味をより一層<br>引き立てます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section recommendSection">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <div class="sectionTtlImg">
+                        <img src={siteDomein + '20240523225444791657.png'} width="133" height="97" alt="ビールのイラスト画像" />
+                    </div>
+                    <h2 class="sectionTtl">
+                        <img src={siteDomein + '20240610113314517031.png'} alt="期間限定のハッピーアワー" width="611" height="52" />
+                    </h2>
+                    <div class="sectionHeadBack">
+                        <img src={siteDomein + '20240523231235909039.png'} width="425" height="425" alt="背景用の画像" />
+                    </div>
+                </div>
+                <p class="txt">オープンから19時まではハッピアワー料金のドリンクがあります。<br>※立ち飲み席でもドリンクは、ハッピアワー料金となるのでご勘弁お願いします。</p>
+                <div class="menuList">
+                    <div class="menuListInr">
+                        <div class="menuListItem">
+                            <p>ハッピーアワー 生ビール</p>
+                            <p>385円</p>
+                        </div>
+                        <div class="menuListItem">
+                            <p>ハッピーアワー 角ハイボール</p>
+                            <p>237円</p>
+                        </div>
+                        <div class="menuListItem">
+                            <p>ハッピーアワー ジムビームハイボール</p>
+                            <p>209円</p>
+                        </div>
+                    </div>
+                    <div class="menuListBack">
+                        <img class="img" src={siteDomein + '20240610115025209197.png'} alt="" width="641" height="150">
+                    </div>
+                </div>
+            </div>
+            <div class="decoration decorationLeft">
+                <img src={siteDomein + '20240610110737606062.png'} alt="" class="img" width="435" height="435">
+            </div>
+            <div class="decoration decorationRight">
+                <img src={siteDomein + '20240610110737995343.png'} alt="" class="img" width="375" height="375">
+            </div>
+        </section>
+
+        <section class="section drinkSection">
+            <div class="sectionBg">
+                <div class="sectionInr">
+                    <div class="sectionHead">
+                        <h2 class="sectionTtl">
+                            <img src={siteDomein + '20240610113314455196.png'} alt="飲み放題" width="224" height="57" />
+                        </h2>
+                        <p class="sectionHeadDesc">All you can drink</p>
+                    </div>
+                    <div class="menuColumnWrap">
+                        <div class="menuColumn">
+                            <div class="menuColumnHead">
+                                <div class="circle">
+                                    <div class="wrapTxt">
+                                        <p class="circleTxt largeSize">90</p>
+                                        <p class="circleTxt">分</p>
+                                    </div>
+                                    <p class="circleTxt">(LO70分)</p>
+                                </div>
+                                <div class="menuColumnHeadName">
+                                    <p class="menuName">スタンダード飲み放題</p>
+                                    <p class="price">1650</p>
+                                </div>
+                            </div>
+                            <div class="menuList">
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p class="adjust">サントリーハイボール</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>ジムビームハイボール/角ハイボール</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>サワー</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>こだわり酒場のレモンサワー/トマトサワー/しょっぱい梅サワー/プレーンサワー/カルピスサワー/ウーロンハイ/緑茶ハイ</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>日本酒</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>松竹梅 豪快(1合)</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>ワイン</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>サントリーカップワイン(赤)/サントリーカップワイン(白)</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>焼酎</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>壺だし大隅(麦)/壺だし大隅(芋)</p>
+                                        <p class="smallSize">(ロック/水割/お湯割からお選びください。)</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>ノンアルコール</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>オールフリー/まるで梅酒なノンアルコール</p>
+                                        <p class="smallSize">(ロック/ソーダ割からお選びください。)</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>ソフトドリンク</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>ウーロン茶/緑茶/コーラ/ジンジャーエール/オレンジジュース/カルピス</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuColumn">
+                            <div class="menuColumnHead">
+                                <div class="circle variation">
+                                    <div class="wrapTxt">
+                                        <p class="circleTxt largeSize">90</p>
+                                        <p class="circleTxt">分</p>
+                                    </div>
+                                    <p class="circleTxt">(LO70分)</p>
+                                </div>
+                                <div class="menuColumnHeadName">
+                                    <p class="menuName">プレミアム飲み放題</p>
+                                    <p class="price">1980</p>
+                                </div>
+                            </div>
+                            <div class="menuList">
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p class="adjust">サントリーハイボール</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>ジムビームハイボール/角ハイボール</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>サワー</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>宝焼酎レモンサワー/塩レモンサワー/凍結レモンサワー/トマトサワー/しょっぱい梅サワー/プレーンサワー/カルピスサワー/午後紅茶サワー/レモンティーサワー/ウーロンハイ/緑茶ハイ/極上抹茶ハイ</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>ビール</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>ザ・プレミアム・モルツ</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>日本酒</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>豪快/日本酒ワイン(グラス)</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>ワイン</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>サントリーカップワイン(赤)/サントリーカップワイン(白)</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>焼酎</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>大隅(麦)/大隅(芋)/宝焼酎ゴールデン(甲類)/二階堂(麦)/いいちこ(麦)</p>
+                                        <p class="smallSize">(ロック/水割/お湯割からお選びください。)</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>ジャパニーズジン</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>翠ジンソーダ</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>ノンアルコール</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>オールフリー/まるで梅酒なノンアルコール</p>
+                                        <p class="smallSize">(ロック/ソーダ割からお選びください。)</p>
+                                    </div>
+                                </div>
+                                <div class="menuListItem">
+                                    <div class="cellHead">
+                                        <p>ソフトドリンク</p>
+                                    </div>
+                                    <div class="cellBody">
+                                        <p>ウーロン茶/緑茶/コーラ/ジンジャーエール/オレンジジュース/カルピス</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="illustImg">
+                    <img src={siteDomein + '20240610110737440905.png'} alt="" class="illustImgLeft" width="236" height="169">
+                    <img src={siteDomein + '20240610110737540786.png'} alt="" class="illustImgRight" width="132" height="157">
+                </div>
+                <div class="sectionBgImg">
+                    <img src={siteDomein + '20240523231235926181.png'} alt="背景用の画像" width="1440" height="650" class="img">
+                </div>
+            </div>
+        </section>
+
+        <section class="section menuSection">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <h2 class="sectionTtl">
+                        <img src={siteDomein + '20240610113314970992.png'} alt="ドリンク" width="224" height="57" />
+                    </h2>
+                    <p class="sectionHeadDesc">Drink</p>
+                </div>
+                <p class="txt readTxt">立ち飲み席は、ドリンク料金から50円引きとなり、お得です。<br>（ハッピアワーの時を除きます）</p>
+                <div class="anchorNav">
+                    <a href="#beer" class="anchorNavLink">
+                        <p class="anchorNavTxt">ビール
+                        </p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#luxury" class="anchorNavLink">
+                        <p class="anchorNavTxt adjust">ふくべぇでちょっと贅沢に</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#fruit" class="anchorNavLink">
+                        <p class="anchorNavTxt">凍結フルーツ</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#lemonsour" class="anchorNavLink">
+                        <p class="anchorNavTxt">レモンサワー</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#sour" class="anchorNavLink">
+                        <p class="anchorNavTxt">サワー</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#sake" class="anchorNavLink">
+                        <p class="anchorNavTxt">日本酒</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#shochu" class="anchorNavLink">
+                        <p class="anchorNavTxt">焼酎
+                        </p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#highball" class="anchorNavLink">
+                        <p class="anchorNavTxt">ハイボール</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#sparklingwine" class="anchorNavLink">
+                        <p class="anchorNavTxt">スパークリングワイン</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#wine" class="anchorNavLink">
+                        <p class="anchorNavTxt">ワイン</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#softdrinks" class="anchorNavLink">
+                        <p class="anchorNavTxt">ソフトドリンク</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#nonalcoholic" class="anchorNavLink">
+                        <p class="anchorNavTxt">ノンアルコール</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                </div>
+                <div id="beer" class="menuWrap">
+                    <h3 class="menuHead">ビール</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>ザ・プレミアム・モルツ</p>
+                                <p class="price">583円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>メガ/ザ・プレミアム・モルツ</p>
+                                <p class="price">803円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>瓶/アサヒスーパードライ</p>
+                                <p class="price">660円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>瓶/キリンラガー</p>
+                                <p class="price">660円</p>
+                            </div>
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>軽め/ビアボール</p>
+                                <p class="price">506円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>定番/ビアボール</p>
+                                <p class="price">528円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>濃いめ/ビアボール</p>
+                                <p class="price">550円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>サントリー　トリプル生</p>
+                                <p class="price">605円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240610110737854906.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </div>
+                <div id="luxury" class="menuWrap">
+                    <h3 class="menuHead">ふくべぇでちょっと贅沢に</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>サントリー知多</p>
+                                <p class="price">605円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>メーカーズクラフトハイボール</p>
+                                <p class="price">550円</p>
+                            </div>
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>碧aoサントリーワールドウイスキー</p>
+                                <p class="price">693円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>六ジンソーダ</p>
+                                <p class="price">683円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240610110737633072.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </div>
+                <div class="menuWrap">
+                    <div id="fruit" class="menuHalf">
+                        <h3 class="menuHead">凍結フルーツ</h3>
+                        <div class="menuGrid">
+                            <div class="menuGridWrap">
+                                <div class="menuGridItem">
+                                    <p>凍結レモンサワー</p>
+                                    <p class="price">550円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>凍結ミックスベリー</p>
+                                    <p class="price">605円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>凍結みかん</p>
+                                    <p class="price">605円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>凍結マンゴー</p>
+                                    <p class="price">605円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>凍結サワー3点セット</p>
+                                    <p class="price">1650円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="lemonsour" class="menuHalf">
+                        <h3 class="menuHead">レモンサワー</h3>
+                        <div class="menuGrid">
+                            <div class="menuGridWrap">
+                                <div class="menuGridItem">
+                                    <p>こだわりレモンサワー</p>
+                                    <p class="price">440円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>塩レモンサワー</p>
+                                    <p class="price">462円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>贅沢まるごとレモンサワー</p>
+                                    <p class="price">660円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>追いサワー</p>
+                                    <p class="price">319円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>こだわりレモンサワーメガ</p>
+                                    <p class="price">748円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240610110737729969.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </div>
+
+                <div id="sour" class="menuWrap">
+                    <h3 class="menuHead">サワー</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>トマトサワー</p>
+                                <p class="price">440円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>しょっぱい梅サワー</p>
+                                <p class="price">440円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>プレーンサワー</p>
+                                <p class="price">440円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ウーロンハイ</p>
+                                <p class="price">440円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>カルピスサワー</p>
+                                <p class="price">440円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>緑茶ハイ</p>
+                                <p class="price">440円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>午後の紅茶サワー</p>
+                                <p class="price">440円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>午後のレモンティーサワー</p>
+                                <p class="price">462円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>宝極上抹茶ハイ</p>
+                                <p class="price">528円</p>
+                            </div>
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>大人のメロンクリームソーダ</p>
+                                <p class="price">605円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>生すだちサワー</p>
+                                <p class="price">550円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>紅茶サワー</p>
+                                <p class="price">440円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>レモンティーサワー</p>
+                                <p class="price">440円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>アイスゆずレモンサワー</p>
+                                <p class="price">550円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>カシスオレンジ</p>
+                                <p class="price">528円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>カシスソーダ</p>
+                                <p class="price">495円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>超酸っぱいアイスレモンサワー</p>
+                                <p class="price">605円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ゆかりサワー</p>
+                                <p class="price">462円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240610110737653598.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </div>
+                <div id="sake" class="menuWrap">
+                    <h3 class="menuHead">日本酒</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>松竹梅 豪快 辛口(一合)</p>
+                                <p class="price">385円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>グラス/白鶴 日本酒ワインBlanc</p>
+                                <p class="price">528円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>グラス/白鶴 日本酒ワインBlanc</p>
+                                <p class="price">2640円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>純米吟醸 94</p>
+                                <p class="price">605円</p>
+                            </div>
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>澪 フローズン(グラス)</p>
+                                <p class="price">528円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>澪 150ml</p>
+                                <p class="price">638円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>松竹梅 昴(生貯蔵酒)</p>
+                                <p class="price">550円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240610110737448067.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </div>
+                <div id="shochu" class="menuWrap">
+                    <h3 class="menuHead">焼酎</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>麦/甕だし大隅</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>芋/甕だし大隅</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>麦/いいちこ</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>麦/こふくろう</p>
+                                <p class="price">528円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>麦/吉四六</p>
+                                <p class="price">550円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>麦/二階堂</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>麦/日田全麴</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>麦/中々</p>
+                                <p class="price">550円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>芋/黒霧島</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>芋/富乃宝山</p>
+                                <p class="price">550円</p>
+                            </div>
+
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>芋/白銀坂</p>
+                                <p class="price">550円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>芋/伊佐美</p>
+                                <p class="price">660円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>芋/伊佐錦</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>芋/さつま島美人</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>甲類/YAEGAKI KABUTO</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>米/宝焼酎ゴールデン</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ジャスミン/香る大隅(麦とジャスミン)</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>芋/だいやめ</p>
+                                <p class="price">462円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>米/残波　白</p>
+                                <p class="price">528円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240610110737765736.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </div>
+                <div id="highball" class="menuWrap">
+                    <h3 class="menuHead">ハイボール</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>ジムハイボール</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>メガジムビームハイボール</p>
+                                <p class="price">638円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>コーラハイ</p>
+                                <p class="price">528円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ジンジャーハイ</p>
+                                <p class="price">528円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>角ハイボール</p>
+                                <p class="price">473円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>メガ角ハイボール</p>
+                                <p class="price">693円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>メーカーズクラフトハイボール</p>
+                                <p class="price">550円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>碧Ao ハイボール</p>
+                                <p class="price">693円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>陸ハイボール</p>
+                                <p class="price">473円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>サントリー知多</p>
+                                <p class="price">605円</p>
+                            </div>
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>碧AOサントリーワールドウイスキー</p>
+                                <p class="price">693円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>濃いめ/ジムハイボール</p>
+                                <p class="price">528円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>濃いめ/メガジムビームハイボール</p>
+                                <p class="price">748円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>濃いめ/コーラハイ</p>
+                                <p class="price">638円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>濃いめ/ジンジャーハイ</p>
+                                <p class="price">638円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>濃いめ/角ハイボール</p>
+                                <p class="price">583円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>濃いめ/メガ角ハイボール</p>
+                                <p class="price">803円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>濃いめ/メーカーズクラフトハイボール</p>
+                                <p class="price">660円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>濃いめ/碧Ao ハイボール</p>
+                                <p class="price">803円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>濃いめ/陸ハイボール</p>
+                                <p class="price">583円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240610110737849563.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </div>
+                <div class="menuWrap">
+                    <div id="sparklingwine" class="menuHalf">
+                        <h3 class="menuHead">スパークリングワイン</h3>
+                        <div class="menuGrid">
+                            <div class="menuGridWrap">
+                                <div class="menuGridItem">
+                                    <p>アンジュエール アイス</p>
+                                    <p class="price">2750円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>バルディビエソ ブリュット</p>
+                                    <p class="price">1540円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>ロータリ ブリュット ロゼ</p>
+                                    <p class="price">5280円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>フェリスタス</p>
+                                    <p class="price">5500円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>シャドン ブリュット</p>
+                                    <p class="price">8250円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="wine" class="menuHalf">
+                        <h3 class="menuHead">ワイン</h3>
+                        <div class="menuGrid">
+                            <div class="menuGridWrap">
+                                <div class="menuGridItem">
+                                    <p>赤/カップワイン</p>
+                                    <p class="price">418円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>白/カップワイン</p>
+                                    <p class="price">418円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240610110737400080.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </div>
+                <div class="menuWrap">
+                    <div id="softdrinks" class="menuHalf">
+                        <h3 class="menuHead">ソフトドリンク</h3>
+                        <div class="menuGrid">
+                            <div class="menuGridWrap">
+                                <div class="menuGridItem">
+                                    <p>緑茶</p>
+                                    <p class="price">308円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>コーラ</p>
+                                    <p class="price">308円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>ウーロン茶</p>
+                                    <p class="price">308円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>ジンジャーエール</p>
+                                    <p class="price">308円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>オレンジジュース</p>
+                                    <p class="price">308円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>カルピスジュース</p>
+                                    <p class="price">308円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="nonalcoholic" class="menuHalf">
+                        <h3 class="menuHead">ノンアルコール</h3>
+                        <div class="menuGrid">
+                            <div class="menuGridWrap">
+                                <div class="menuGridItem">
+                                    <p>オールフリー</p>
+                                    <p class="price">385円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>まるで梅酒なノンアルコール</p>
+                                    <p class="price">363円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>ノンアルコールメロンクリームソーダ</p>
+                                    <p class="price">528円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>ノンアルコール　カシスソーダ</p>
+                                    <p class="price">418円</p>
+                                </div>
+                                <div class="menuGridItem">
+                                    <p>ノンアルコール　カシスオレンジ</p>
+                                    <p class="price">440円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240610110737506138.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

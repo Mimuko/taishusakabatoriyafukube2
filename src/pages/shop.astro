@@ -1,0 +1,226 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/shop.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "店舗情報｜大衆居酒屋ふくべぇ";
+const siteDomein = "https://toriyafukubee.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+		<section class="pageHeader">
+			<div class="pageHeaderBg">
+				<img width="2720" height="700" src={siteDomein + '20240610110821507960.png'} alt="店舗情報" class="pageHeaderImg" />
+			</div>
+			<div class="pageHeaderGroup">
+				<h1 class="pageHeaderFront">
+					<img src={siteDomein + '20240610110821839417.png'} alt="店舗情報" width="346" height="88" />
+				</h1>
+			</div>
+		</section>
+		<section class="section shopSection">
+			<div class="sectionInr">
+				<div class="flex shopRow">
+					<div class="overlayImg">
+						<img src={siteDomein + '20240610110821815760.png'} alt="" width="263" height="276" class="smallImg" />
+						<img src={siteDomein + '20240610110821625713.png'} alt="" width="433" height="522" class="largeImg" />
+					</div>
+					<div class="accessInfo">
+						<div class="sectionHead">
+							<div class="sectionTtlImg">
+								<img src={siteDomein + '20240523231235745148.png'} width="76" height="76" alt="赤い扇のアイコン画像" />
+							</div>
+							<h2 class="sectionTtl">
+								<img src={siteDomein + '20240524164021161672.png'} alt="大衆酒場鶏家ふくべぇ" width="407" height="41" class="accessInfoLogo" />
+							</h2>
+						</div>
+						<div class="accessInfoItem">
+							<p class="txt accessInfoItemHead">住所
+							</p>
+							<p class="txt">〒670-0903 兵庫県姫路市立町72
+								<br />第9クリスタルビル 1F
+							</p>
+						</div>
+						<div class="accessInfoItem">
+							<p class="txt accessInfoItemHead">アクセス
+							</p>
+							<p class="txt">JR姫路駅から徒歩6分
+							</p>
+						</div>
+						<div class="accessInfoItem">
+							<p class="txt accessInfoItemHead">TEL
+							</p>
+							<a href="tel:0792587109" class="tel">
+								<p class="txt">079-258-7109
+								</p>
+							</a>
+						</div>
+						<div class="accessInfoItem">
+							<p class="txt accessInfoItemHead">営業時間
+							</p>
+							<div class="wrapTxt">
+								<p class="boldTxt">17:00～翌0:00
+								</p>
+								<p class="txt">料理L.O. 23:00 ドリンクL.O. 23:30
+								</p>
+								<p class="boldTxt">金・土: 17:00～翌2:00
+								</p>
+								<p class="txt">料理L.O. 1:00 ドリンクL.O. 1:30
+								</p>
+							</div>
+						</div>
+						<div class="accessInfoItem">
+							<p class="txt accessInfoItemHead">キャッシュレス
+							</p>
+							<p class="txt">クレカ可、電子マネー可
+							</p>
+						</div>
+						<div class="accessInfoItem">
+							<p class="txt accessInfoItemHead">定休日
+							</p>
+							<p class="txt">月曜日
+							</p>
+						</div>
+						<div class="accessInfoItem">
+							<p class="txt accessInfoItemHead">席数
+							</p>
+							<p class="txt">立ち飲み席8人ぐらい　テーブル席４つ
+								<br />※立ち飲み席がしっぽり飲むのがオススメです
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<aside class="section tileSection">
+			<div class="tile">
+				<div class="tileItem">
+					<img src={siteDomein + '20240610110755667863.png'} width="350" height="238" alt="店内の画像" class="img" />
+				</div>
+				<div class="tileItem">
+					<img src={siteDomein + '20240610110755323985.png'} width="350" height="238" alt="店内の画像" class="img" />
+				</div>
+				<div class="tileItem">
+					<img src={siteDomein + '20240610110755645202.png'} width="350" height="238" alt="提供料理のイメージ画像" class="img" />
+				</div>
+			</div>
+		</aside>
+		<aside class="section shopImgSection sectionBg">
+			<div class="sectionBgImg">
+				<img src={siteDomein + '20240523231235926181.png'} alt="背景用の画像" width="1440" height="447" class="img" />
+			</div>
+			<div class="sectionInr">
+				<div class="flex shopImgRow">
+					<div class="shopImgItem">
+						<img src={siteDomein + '20240611131348491462.png'} width="426" height="42" alt="姫路 城下町認定シェフ" class="img shopImgTtl" />
+						<img src={siteDomein + '20240610110821447797.png'} width="520" height="309" alt="提供料理のイメージ画像" class="img" />
+					</div>
+					<div class="shopImgItem">
+						<img src={siteDomein + '20240611131348329429.png'} width="425" height="98" alt="超達人店 頂点ハイボール認定店" class="img shopImgTtl" />
+						<img src={siteDomein + '20240610110821124624.png'} width="520" height="309" alt="提供料理のイメージ画像" class="img" />
+					</div>
+				</div>
+			</div>
+			<div class="decoration decorationLeft">
+				<img src={siteDomein + '20240611173332940269.png'} width="190" height="129" alt="ビールのイラスト" class="img" />
+			</div>
+			<div class="decoration decorationRight">
+				<img src={siteDomein + '20240611173332128201.png'} width="135" height="169" alt="焼き鳥のイラスト" class="img" />
+			</div>
+		</aside>
+		<section class="section">
+			<div class="sectionInr">
+				<div class="sectionHead">
+					<h2 class="sectionTtl">
+						<img src={siteDomein + '20240611131348714876.png'} alt="アクセス" width="223" height="57" />
+					</h2>
+					<p class="sectionHeadDesc">Access
+					</p>
+				</div>
+				<div class="googleMap map">
+					<div src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13100.033014646819!2d134.68960200000004!3d34.830885!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1e61a9f1b6d%3A0xb2860cc9bbdb7999!2z5aSn6KGG6YWS5aC0IOm2j-WutiDjgbXjgY_jgbnjgYc!5e0!3m2!1sja!2sus!4v1718112467315!5m2!1sja!2sus&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade" class="c4497">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13100.033014646819!2d134.68960200000004!3d34.830885!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1e61a9f1b6d%3A0xb2860cc9bbdb7999!2z5aSn6KGG6YWS5aC0IOm2j-WutiDjgbXjgY_jgbnjgYc!5e0!3m2!1sja!2sus!4v1718112467315!5m2!1sja!2sus&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade" width="400" height="300" loading="lazy" id="iu5ev9" class="gjs-no-pointer map c2981"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section sectionBg companySection">
+			<div class="sectionBgImg">
+				<img src={siteDomein + '20240611163841431786.png'} alt="背景用の画像" width="1440" height="447" class="img" />
+			</div>
+			<div class="sectionInr">
+				<div class="sectionHead">
+					<h2 class="sectionTtl">
+						<img src={siteDomein + '20240611163841916288.png'} alt="会社概要" width="225" height="57" />
+					</h2>
+					<p class="sectionHeadDesc">Company Profile
+					</p>
+				</div>
+				<div class="data">
+					<div class="dataItem">
+						<p class="dataItemHead">名称
+						</p>
+						<p class="txt">大衆酒場鶏家ふくべぇ
+						</p>
+					</div>
+					<div class="dataItem">
+						<p class="dataItemHead">住所
+						</p>
+						<p class="p1718163283197">〒670-0903 兵庫県姫路市立町72 第9クリスタルビル 1F
+						</p>
+					</div>
+					<div class="dataItem">
+						<p class="dataItemHead">TEL
+						</p>
+						<a href="tel:0792587109">
+							<p class="txt">079-258-7109
+							</p>
+						</a>
+					</div>
+					<div class="dataItem">
+						<p class="dataItemHead">代表
+						</p>
+						<p class="txt">福田正和
+						</p>
+					</div>
+					<div class="dataItem">
+						<p class="dataItemHead">Mail
+						</p>
+						<a href="mailto:toriyafukubee@gmail.com">
+							<p class="txt">toriyafukubee@gmail.com
+							</p>
+						</a>
+					</div>
+					<div class="dataItem">
+						<p class="dataItemHead">インボイス番号
+						</p>
+						<p class="txt">登録番号：T3810904120775
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

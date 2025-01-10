@@ -1,0 +1,188 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/commitment.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "こだわり｜大衆居酒屋ふくべぇ";
+const siteDomein = "https://toriyafukubee.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="2720" height="700" src={siteDomein + '20240531170944341524.png'} alt="こだわり" class="pageHeaderImg" width="1440" height="450" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">
+                    <img src={siteDomein + '20240531170944576447.png'} alt="こだわり" width="336" height="88">
+                </h1>
+            </div>
+        </section>
+        <div class="section">
+            <div class="sectionInr">
+            <img src={siteDomein + '20240601175418532380.png'} alt="背景用の画像" width="606" height="2596" class="pcImg stepBackImg" />
+
+                <section class="step">
+                    <div class="stepContent">
+                        <h2 class="stepPoint">こだわり</h2>
+                        <div class="stepTtl">
+                            <p class="stepTtlRed">立ち飲み席</p>
+                            <p class="stepTtlTxt">や</p>
+                            <p class="stepTtlRed">テーブル席</p>
+                            <p class="stepTtlTxt">による<br></p>
+                            <p class="stepTtlRed">自分に合った飲み方</p>
+                            <p class="stepTtlTxt">ができる</p>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                                立ち飲み席とテーブル席、それぞれに異なるシチュエーションでの楽しみ方があります。<br>
+                                立ち飲み席では気軽に一人や友人と会話を楽しみながらサクッと飲むことができ、動きやすい空間なので、さまざまな人との交流も生まれやすいです。<br>
+                                テーブル席はよりプライベートな時間を重視し、じっくりと料理やドリンクを味わいたい時に適しています。<br>
+                                <br>
+                                立ち飲み席からテーブル席にも移動できるので、ふくべぇならでは、気軽に食べ飲みできる楽しさを味わえます。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stepImg">
+                        <img src={siteDomein + '20240523225444833288.png'} alt="徳利とお猪口のイラスト" width="141" height="110" class="smallImg pcImg" />
+                        <img src={siteDomein + '20240601114957679542.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="533" height="533" class="largeImg" />
+                    </div>
+                </section>
+                <section class="step">
+                    <div class="stepContent">
+                        <p class="stepPoint">こだわり</p>
+                        <div class="stepTtl adjtLs">
+                            <p class="stepTtlRed">鮮度の高い鳥</p>
+                            <p class="stepTtlTxt">を</p>
+                            <h2 class="stepTtlRed">リーズナブルな価格</h2>
+                            <p class="stepTtlTxt">で食べられるお店</p>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                            ふくべぇでは、その日に仕入れた新鮮な鳥肉を使用しているため、刺身としても安心して楽しむことができます。<br>
+                            <br>
+                            ただし、鳥の刺身は非常に新鮮な素材を用いているため、体調がすぐれない方は消化が難しい場合がありますのでご遠慮ください。<br>
+                            健康な体調の時に、その独特な食感と深い味わいをぜひお楽しみください。<br>
+                            リーズナブルな価格設定もあり、美味しい鳥料理を気軽に味わって笑顔になってください。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stepImg">
+                        <img src={siteDomein + '20240601114957669543.png'} alt="鶏肉の刺身のイラスト" width="229" height="163" class="smallImg pcImg" />
+                        <img src={siteDomein + '20240601114957502861.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="533" height="533" class="largeImg" />
+                    </div>
+                </section>
+                <section class="step">
+                    <div class="stepContent">
+                        <p class="stepPoint">こだわり</p>
+                        <div class="stepTtl">
+                            <p class="stepTtlTxt">料理に合う</p>
+                            <h2 class="stepTtlRed">醤油やポン酢を手作り</h2>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                            料理に合うの醤油やポン酢を手作りすることで、一層美味しい料理を提供しています。<br>
+                            手作りの醤油は、だしを効かせた特製のものを用意し、繊細な鳥刺身の味を引き立てます。<br>
+                            また、手作りポン酢は、新鮮な柑橘類の果汁をたっぷりと使い、爽やかな酸味が特徴です。<br>
+                            <br>
+                            独自配合によるポン酢と醤油は、お箸が進むこと間違いなしですが、食べすぎに注意してください。<br>
+                            ※いっぱい食べて頂けるのはうれしいです
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stepImg">
+                        <img src={siteDomein + '20240601114957959499.png'} alt="調味料を撹拌しているイラスト" width="118" height="118" class="smallImg pcImg" />
+                        <img src={siteDomein + '20240601114957141696.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="533" height="533" class="largeImg" />
+                    </div>
+                </section>
+                <section class="step">
+                    <div class="stepContent">
+                        <p class="stepPoint">こだわり</p>
+                        <div class="stepTtl">
+                            <p class="stepTtlRed">20年以上継ぎ足しのタレ</p>
+                            <p class="stepTtlTxt">による</p>
+                            <h2 class="stepTtlTxt">絶品の味わい</h2>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                            20年以上継ぎ足しのタレによる絶品の味わいは、長い年月をかけて磨かれた深みと複雑さが特徴です。<br>
+                            <br>
+                            このタレは、店主がアルバイト時代から使っているタレで、一度味わうと忘れられない豊かな風味を生み出しています。<br>
+                            <br>
+                            20年以上育てた次にタレによって、料理が格別な逸品に変わります。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stepImg">
+                        <img src={siteDomein + '20240601114957572434.png'} alt="焼き鳥のイラスト" width="187" height="205" class="smallImg pcImg" />
+                        <img src={siteDomein + '20240601114957894903.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="533" height="533" class="largeImg" />
+                    </div>
+                </section>
+                <section class="step">
+                    <div class="stepContent">
+                        <p class="stepPoint">こだわり</p>
+                        <div class="stepTtl">
+                            <p class="stepTtlTxt">甘辛でクセになる</p>
+                            <h2 class="stepTtlRed">丹波地鶏の手羽唐</h2>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                            丹波地鶏の手羽唐は、世界のどの料理にも負けない甘辛さと独特の味わいがクセになる一品です。<br>
+                            この地鶏の特徴は、肉質が非常に柔らかくジューシーであること。そこに特製の甘辛ダレを絡めることで、味の深みが増し、一度食べたら忘れられない美味しさです。<br>
+                            <br>
+                            手羽唐好きのお客様から世界の〇〇よりも美味しいとお墨付き料理で是非食べて頂き一品です。<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stepImg">
+                        <img src={siteDomein + '20240601114957345182.png'} alt="鶏のイラスト" width="116" height="128" class="smallImg pcImg" />
+                        <img src={siteDomein + '20240601114957132839.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="533" height="533" class="largeImg" />
+                    </div>
+                </section>
+                <section class="step">
+                    <div class="stepContent">
+                        <p class="stepPoint">こだわり</p>
+                        <div class="stepTtl">
+                            <p class="stepTtlTxt">とにかく楽しく飲んでほしい</p>
+                            <h2 class="stepTtlRed">赤字覚悟のハッピアワー</h2>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                                「とにかく楽しく飲んでほしい」という思いから生まれた、赤字覚悟のハッピーアワーです。お店のオープンから19時までの時間帯には、通常よりも大幅に価格を下げたドリンクメニューを提供し、誰もが気軽に楽しめる雰囲気を創り出しています。<br>
+                                <br>
+                                ビール、カクテル、ワインなど、多様な選択肢を用意しており、この時間だけの特別な価格で提供します。皆で集まって、心おきなく楽しい時間を過ごしましょう。<br>
+                                ※体力が続く限り頑張って提供します
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stepImg">
+                        <img src={siteDomein + '20240601114957352403.png'} alt="ビールジョッキのイラスト" width="140" height="188" class="smallImg pcImg" />
+                        <img src={siteDomein + '20240601114957130175.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="533" height="533" class="largeImg" />
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,11 +1,366 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/top.css';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "トップページ｜大衆居酒屋ふくべぇ";
+const siteDomein = "https://toriyafukubee.com/system_panel/uploads/images/";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="firstView">
+            <div class="firstViewImg">
+                <img src={siteDomein + '20240525142935327756.png'} alt="ファーストビュー背景画像" width="1440" height="720" class="img" />
+            </div>
+            <div class="firstViewHead">
+                <div class="firstViewTtl">
+                    <p class="firstViewTtlLarge firstViewTtlLargeRed">リーズナブル
+                    </p>
+                    <p class="firstViewTtlTxt">ながら手抜きは
+                    </p>
+                    <p class="firstViewTtlLarge firstViewTtlLargeYellow">一切なし
+                    </p>
+                </div>
+                <div class="firstViewDesc">
+                    <h1 class="firstViewDescTxt">
+                        大衆酒場の温もりと、<br class="pcHidden">ひと串の幸せをあなたに
+                    </h1>
+                </div>
+                <img src={siteDomein + '20240523231235952783.png'} alt="" width="175" height="175" class="firstViewTtlImg" />
+            </div>
+        </section>
+        <section class="section sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240523225418419325.png'} alt="背景用の画像" width="1440" height="654" class="img" />
+            </div>
+            <div class="concept">
+                <div class="conceptTtl">
+                    <h2 class="conceptTtlTxt">
+                        <img src={siteDomein + '20240525001345251037.png'} width="139" height="386" alt="姫路駅から徒歩6分の立ち飲み席もある居心地の良い大衆居酒屋" class="img" />
+                    </h2>
+                </div>
+                <div class="conceptTxt">
+                    <p class="txt">
+                        大衆酒場鶏家ふくべぇは、兵庫県姫路市に店舗があり、JR姫路駅から徒歩6分でいけるワイワイ楽しめる大衆居酒屋です。
+                    </p>
+                    <p class="txt">
+                        立ち飲み席とテーブル席があり、お一人様での立ち飲みや仲間とテーブル席で国産桜姫鶏の焼き鳥を片手にお酒を飲んで楽しい時間を過ごせる居心地の良い居酒屋です。
+                    </p>
+                </div>
+            </div>
+            <div class="conceptImg">
+                <img src={siteDomein + '20240523225444791657.png'} alt="ビールのイラスト画像" width="178" height="130" class="leftIllustImg img" />
+                <img src={siteDomein + '20240523225444152696.png'} alt="焼き鳥のイラスト画像" width="136" height="156" class="rightIllustImg img" />
+                <img src={siteDomein + '20240523225418735538.png'} alt="大衆酒場鶏家ふくべぇのイメージ画像" width="440" height="440" class="rightTopImg img" />
+                <img src={siteDomein + '20240523225418956220.png'} alt="大衆酒場鶏家ふくべぇのイメージ画像" width="354" height="354" class="rightBottomImg img" />
+                <img src={siteDomein + '20240523225418250040.png'} alt="大衆酒場鶏家ふくべぇのイメージ画像" width="274" height="274" class="leftTopImg img" />
+                <img src={siteDomein + '20240523225418171368.png'} alt="大衆酒場鶏家ふくべぇのイメージ画像" width="411" height="411" class="leftBottomImg img" />
+            </div>
+        </section>
+        <section id="feature" class="section">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <div class="sectionTtlImg">
+                        <img src={siteDomein + '20240523231235745148.png'} width="76" height="76" alt="赤い扇のアイコン画像" />
+                    </div>
+                    <h2 class="sectionTtl">
+                        <img src={siteDomein + '20240523225525906866.png'} alt="大衆酒場鶏家ふくべぇの特徴" width="738" height="57" />
+                    </h2>
+                    <p class="sectionHeadDesc">Features
+                    </p>
+                </div>
+                <div class="step">
+                    <div class="stepContent">
+                        <div class="stepTtl">
+                            <h3 class="stepTtlImg">
+                                <img src={siteDomein + '20240523225525470400.png'} width="500" height="99" alt="リーズナブルながらこだわりに一切の手抜きなし" />
+                            </h3>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                                大衆酒場鶏家ふくべぇでは、リーズナブルな価格でありながらも、厳選された食材を使用した料理を心ゆくまで楽しめます。
+                                <br />
+                                <br />
+                                料理に合う調味料を作り、20年以上の継ぎ足しのタレや今までに培った経験による美味しい焼き鳥の焼き方など笑みがこぼれる料理を提供します。
+                            </p>
+                        </div>
+                        <img src={siteDomein + '20240523225418585983.png'} alt="背景用の画像" width="394" height="378" class="pcImg stepContentBack" />
+                    </div>
+                    <div class="stepImg">
+                        <img src={siteDomein + '20240523225444957396.png'} alt="から揚げのイラスト" width="248" height="186" class="smallImg pcImg" />
+                        <img src={siteDomein + '20240523225444454204.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="433" height="522" class="largeImg" />
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="stepContent">
+                        <div class="stepTtl">
+                            <h3 class="stepTtlImg">
+                                <img src={siteDomein + '20240523225525844376.png'} width="500" height="99" alt="丹波地鶏によるクセになる手羽先のから揚げ" />
+                            </h3>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                                大衆酒場鶏家ふくべぇの丹波地鶏を使用した絶品の手羽先唐揚げをクセになります。 他のお店にも負けない自信があります。
+                                <br />
+                                <br />
+                                スパイスとブラックペッパー使い、甘辛だれの味付けなので、お酒との相性がバツグンです。
+                                <br />
+                                ジューシーで旨味が凝縮された一品は、食べ始めたら止まらないおいしさです！
+                            </p>
+                        </div>
+                        <img src={siteDomein + '20240523225418585983.png'} alt="背景用の画像" width="394" height="378" class="pcImg stepContentBack" />
+                    </div>
+                    <div class="stepImg">
+                        <img src={siteDomein + '20240523225444350604.png'} alt="鶏のイラスト" width="168" height="146" class="smallImg pcImg" />
+                        <img src={siteDomein + '20240523225444601487.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="433" height="522" class="largeImg" />
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="stepContent">
+                        <div class="stepTtl">
+                            <h3 class="stepTtlImg">
+                                <img src={siteDomein + '20240523225525954717.png'} width="346" height="101" alt="飲みすぎ注意の飲み放題メニュー" />
+                            </h3>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                                大衆酒場鶏家ふくべぇの飲み放題メニューは、その豊富さとリーズナブルな価格で、ついつい飲みすぎてしまうほど魅力的です。
+                                <br />
+                                一人でゆっくり立ち飲みを楽しむもよし、友達との賑やかな夜を過ごすもよし、ちょっと一息つきたい時にもぴったり。
+                                <br />
+                                <br />
+                                ただし、楽しさのあまり飲みすぎにはご注意ください。
+                            </p>
+                        </div>
+                        <img src={siteDomein + '20240523225418585983.png'} alt="背景用の画像" width="394" height="378" class="pcImg stepContentBack" />
+                    </div>
+                    <div class="stepImg">
+                        <img src={siteDomein + '20240523225444833288.png'} alt="徳利とお猪口のイラスト" width="154" height="130" class="smallImg pcImg" />
+                        <img src={siteDomein + '20240523225418840053.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="433" height="522" class="largeImg" />
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="stepContent">
+                        <div class="stepTtl">
+                            <h3 class="stepTtlImg">
+                                <img src={siteDomein + '20240523225525607444.png'} width="608" height="102" alt="立ち飲み席はドリンクメニューの料金から50円引き" />
+                            </h3>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                                大衆酒場鶏家ふくべぇの立ち飲み席をご利用のお客様には、ドリンクメニューをさらにお楽しみいただくために、すべてのドリンクを通常価格から50円引きで提供しています。
+                                <br />
+                                <br />
+                                友人との気軽な集まりや、仕事帰りの一杯をぜひご利用ください。
+                            </p>
+                            <p class="noticeTxt">※ハッピーアワー中はハッピアワー料金となり、お得な時間だから、その辺はちょっと見逃してください
+                            </p>
+                        </div>
+                        <img src={siteDomein + '20240523225418585983.png'} alt="背景用の画像" width="394" height="378" class="pcImg stepContentBack" />
+                    </div>
+                    <div class="stepImg">
+                        <img src={siteDomein + '20240523225444483462.png'} alt="ワインのイラスト" width="128" height="112" class="smallImg pcImg" />
+                        <img src={siteDomein + '20240523225418159118.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="433" height="522" class="largeImg" />
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="stepContent">
+                        <div class="stepTtl">
+                            <h3 class="stepTtlImg">
+                                <img src={siteDomein + '20240523225525336058.png'} width="557" height="117" alt="城下町認定シェフと頂店ハイボールが認定店" />
+                            </h3>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                                兵庫県姫路市にあるふくべぇは、「城下町認定シェフ」です。
+                                <br />
+                                地元の食材を活かした伝統的な料理を提供することで、姫路の食文化を守り、発展させています。
+                                <br />
+                                さらに、サントリーによる超達人店として「頂店ハイボール」認定されています。
+                                <br />
+                                この認定は、特に優れたハイボールを提供する店に与えられるもので、ふくべぇのハイボールは訪れる多くの客に愛されています。
+                            </p>
+                        </div>
+                        <img src={siteDomein + '20240523225418585983.png'} alt="背景用の画像" width="394" height="378" class="pcImg stepContentBack" />
+                    </div>
+                    <div class="stepImg">
+                        <div class="stepImg smallImg">
+                            <img src={siteDomein + '20240526151841393573.png'} alt="ビール瓶のイラスト" width="65" height="183" class="pcImg bottleIllust" />
+                            <img src={siteDomein + '20240526205606357303.png'} alt="ビールジョッキのイラスト" width="113" height="143" class="pcImg jugIllust" />
+                        </div>
+                        <img src={siteDomein + '20240523225418271278.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="433" height="522" class="largeImg" />
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="stepContent">
+                        <div class="stepTtl">
+                            <h3 class="stepTtlImg">
+                                <img src={siteDomein + '20240523225525301422.png'} width="240" height="47" alt="期間限定" class="stepTtlImgLimited" />
+                                <img src={siteDomein + '20240523225525241411.png'} width="545" height="152" alt="毎日17時から19時までハッピーアワーのお店泣かせのドリンク料金" />
+                            </h3>
+                        </div>
+                        <div class="stepTxt">
+                            <p class="txt">
+                                大衆酒場鶏家ふくべぇは、期間限定で毎日ハッピーアワーでを実施しています。
+                                <br />
+                                <br />
+                                毎日実施しているのは期間限定になりますのでこの機会に是非ご利用ください。
+                                <br />
+                                普段よりもお得な価格で提供するため、友人や家族を誘って、お得な価格でのんびりと時間をお過ごしいただけます。
+                                <br />
+                                ハッピアワー中のドリンクは、立ち飲み席・テーブル席全てハッピアワー料金となります。
+                            </p>
+                            <p class="noticeTxt">※ハッピアワーでさらに立ち飲み席で割引をすると涙が止まらないのでご理解ください
+                            </p>
+                        </div>
+                        <img src={siteDomein + '20240523225418585983.png'} alt="背景用の画像" width="394" height="378" class="pcImg stepContentBack" />
+                    </div>
+                    <div class="stepImg">
+                        <img src={siteDomein + '20240523225444271910.png'} alt="" width="94" height="119" class="smallImg pcImg" />
+                        <img src={siteDomein + '20240523225418755510.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="433" height="522" class="largeImg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section commitmentSection sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240523225418681999.png'} alt="背景用の画像" width="1440" height="742" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <h2 class="sectionTtl">
+                        <img src={siteDomein + '20240523225525404949.png'} alt="大衆酒場鶏家ふくべぇのこだわり" width="824" height="58" />
+                    </h2>
+                    <p class="sectionHeadDesc">Commitment
+                    </p>
+                </div>
+                <div class="flex">
+                    <div class="txtBox">
+                        <p class="txt">大衆酒場鶏家ふくべぇでは、秘伝のタレ、独自の焼き方、そして厳選された食材にこだわります。
+                            <br />
+                            店主が飲食店で働きだしてから継ぎ足してきた秘伝のタレは、深い味わいをもたらし、焼き鳥を一層特別なものにしています。
+                            <br />
+                            <br />
+                            さらに、熟練の技で焼き上げることで、外はカリッと中はジューシーな完璧な焼き加減を実現。
+                            <br />
+                            厳選した食材のみを使用することで、素材の味を最大限に引き出し、お客様に本物の味を提供しています。
+                        </p>
+                        <a href="./commitment" class="normalBtn">
+                            <p class="normalBtnTxt">こだわり
+                            </p>
+                        </a>
+                    </div>
+                    <div class="imgBox overlayImg">
+                        <img src={siteDomein + '20240523225444299703.png'} alt="大衆酒場鶏家ふくべぇお料理のイラスト" width="192" height="143" class="smallImg" />
+                        <img src={siteDomein + '20240523225418965205.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="215" height="215" class="smallImg" />
+                        <img src={siteDomein + '20240523225418247358.png'} alt="大衆酒場鶏家ふくべぇお料理のイメージ画像" width="449" height="449" class="largeImg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="linkSection">
+            <div class="sectionInr flex">
+                <div class="linkBox">
+                    <a href="./cooking" class="imgLink"><img src={siteDomein + '20240523225418282303.png'} alt="料理 背景用の画像" width="530" height="524" class="backImg" />
+                        <div class="front">
+                            <p class="frontImgCooking">
+                                <img src={siteDomein + '20240523225525517768.png'} alt="料理" width="106" height="54" class="img" />
+                            </p>
+                            <p class="frontImgDesc">Cooking
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="linkBox">
+                    <a href="./drink" class="imgLink"><img src={siteDomein + '20240612114211934538.png'} alt="ドリンク 背景用の画像" width="530" height="524" class="backImg" />
+                        <div class="front">
+                            <p class="frontImgMenu">
+                                <img src={siteDomein + '20240612114211790533.png'} alt="ドリンク" width="239" height="54" class="img" />
+                            </p>
+                            <p class="frontImgDesc">Drink
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <section class="section recruitSection">
+            <div class="sectionBg">
+                <div class="sectionBgImg">
+                    <img src={siteDomein + '20240523225444651308.png'} alt="背景用の画像" width="1440" height="691" class="img" />
+                </div>
+                <div class="recruitSectionInr sectionInr">
+                    <div class="sectionHead">
+                        <h2 class="sectionTtl">
+                            大衆酒場鶏家ふくべぇでは
+                            <br />
+                            一緒に働いてくれる仲間を募集しております
+                        </h2>
+                        <p class="sectionHeadDesc">Recruit
+                        </p>
+                    </div>
+                    <div class="sectionBody">
+                        <p class="txt">
+                            大衆酒場鶏家ふくべぇでは、
+                            <br />
+                            お客様に美味しい食事と心地よいサービスを提供できる仲間を求めています。
+                            <br />
+                            料理の腕や経験はもちろん大切ですが、笑顔やおもてなしの心も重視しています。
+                            <br />
+                            <br />
+                            お互いに協力し合いながら働ける環境を整えています。
+                            <br />
+                            飲食業の未経験者も歓迎です。
+                            <br />
+                            興味のある方はぜひお気軽にご応募ください。
+                        </p>
+                        <a href="./recruit" class="normalBtn">
+                            <p class="normalBtnTxt">求人情報
+                            </p>
+                        </a>
+                    </div>
+                    <img src={siteDomein + '20240523225444879047.png'} alt="求人情報のイラスト" width="292" height="207" class="pcImg recruitIllust" />
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="sectionHead">
+                <h2 class="sectionTtl">
+                    <img src={siteDomein + '20240523225525252296.png'} alt="新着情報" width="216" height="55" />
+                </h2>
+                <p class="sectionHeadDesc">News</p>
+            </div>
+            <div class="newsArea">
+                <section table="news" rows="3" sort-field="sort" sort-order="asc" display-mode="blog" template="indexNews" pagination="0" page-indicator="0" grouping="" group-expansion="" key="" type="" value="" smth_date="1" id="wgc-1717132350224" class="webgene-component">
+                    <span>CMSコンテンツ表示エリア</span>
+                </section>
+                <a href="#" class="normalBtn">
+                    <p class="normalBtnTxt">新着一覧
+                    </p>
+                </a>
+            </div>
+        </section>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

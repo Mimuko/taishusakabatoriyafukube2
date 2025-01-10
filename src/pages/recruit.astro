@@ -1,0 +1,169 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/recruit.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "求人情報｜大衆居酒屋ふくべぇ";
+const siteDomein = "https://toriyafukubee.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="2720" height="700" src={siteDomein + '20240610110821535737.png'} alt="求人情報" class="pageHeaderImg" width="1440" height="450" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">
+                    <img src={siteDomein + '20240610110821593704.png'} alt="求人情報" width="345" height="88">
+                </h1>
+            </div>
+        </section>
+        <div class="section recruitSection sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240611130623549013.png'} alt="背景用の画像" class="img" width="1440" height="447">
+            </div>
+            <div class="recruitSectionInr">
+                <div class="recruitSectionInrLeft">
+                    <div class="overlayImg">
+                        <img class="illustImg" src={siteDomein + '20240523225444350604.png'} alt="にわとりのアイコン" width="168" height="146">
+                        <img class="largeImg" src={siteDomein + '20240611134833833999.png'} alt="従業員の写真" width="671" height="671">
+                    </div>
+                </div>
+                <div class="recruitSectionInrRight">
+                    <div class="sectionHead">
+                        <div class="sectionTtlImg">
+                            <img src={siteDomein + '20240523231235745148.png'} width="76" height="76" alt="赤い扇のアイコン画像">
+                        </div>
+                        <p class="txt">大衆酒場鶏家ふくべぇでは現在、</p>
+                        <div class="txtWrap">
+                            <p class="txtRed">元気で明るい従業員を<br class="tabHidden">募集</p>
+                            <p class="txt">しております。</p>
+                        </div>
+                    </div>
+                    <div class="sectionDetail">
+                        <p class="txt">大衆酒場鶏家ふくべぇでは、一緒に働いてくれる仲間を募集しております。<br>
+                        採用にあたり、学歴のほか経験の有無も一切不問です！<br>
+                        初めての方でも、丁寧に指導しますのでご安心ください。<br>
+                        <br>
+                        詳細は直接案内させていただきますので、少しでもご興味がございましたらお気軽にお問い合わせください。</p>
+                    </div>
+                    <div class="illustImg">
+                        <img src={siteDomein + '20240523225444152696.png'} alt="" class="illustImgRight" width="136" height="156">
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tileItem">
+                    <img src={siteDomein + '20240611130623995358.png'} width="470" height="280" alt="提供料理のイメージ画像" class="img">
+                </div>
+                <div class="tileItem">
+                    <img src={siteDomein + '20240611130623565177.png'} width="470" height="280" alt="提供料理のイメージ画像" class="img">
+                </div>
+                <div class="tileItem">
+                    <img src={siteDomein + '20240610110821400366.png'} width="470" height="280" alt="提供料理のイメージ画像" class="img">
+                </div>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <h2 class="sectionTtl">
+                        <img src={siteDomein + '20240611131348358896.png'} alt="募集要項" width="223" height="57" />
+                    </h2>
+                    <p class="sectionHeadDesc">Application Requirements</p>
+                </div>
+
+                <div class="table">
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p>お仕事の内容</p>
+                        </div>
+                        <div class="tableBody">
+                            <p>オーダー取り・料理や飲み物の提供・ドリンク作り・レジ対応・後片付けなど、<br>ホール業務全般や洗い物などをお任せします。</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p>雇用形態</p>
+                        </div>
+                        <div class="tableBody">
+                            <p>パート</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p>応募資格</p>
+                        </div>
+                        <div class="tableBody">
+                            <p>なし</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p>就業時間</p>
+                        </div>
+                        <div class="tableBody">
+                            <p>17:00～翌0:00（料理L.O. 23:00 ドリンクL.O. 23:30）<br>金・土: 17:00～翌2:00（料理L.O. 1:00 ドリンクL.O. 1:30）</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p>勤務地</p>
+                        </div>
+                        <div class="tableBody">
+                            <p>〒670-0903 兵庫県姫路市立町72 第9クリスタルビル 1F</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p>待遇・福利厚生</p>
+                        </div>
+                        <div class="tableBody">
+                            <p>◆社会保険有（法令に則り適用）</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p>応募方法</p>
+                        </div>
+                        <div class="tableBody">
+                            <p>下記の電話番号までお気軽にお問い合わせください。</p>
+                            <a href="tel:0792587109" class="telLink">
+                                <img src={siteDomein + '20240611132326554710.png'} alt="電話アイコン画像" width="24" height="24" class="img" />
+                                <p class="telLinkTxt">079-258-7109</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="decoration">
+                <div class="decorationImg">
+                    <img width="451" height="433" src={siteDomein + '20240611151810233565.png'} alt="背景用の画像" class="img">
+                </div>
+            </div>
+        </section>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

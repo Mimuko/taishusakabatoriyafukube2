@@ -1,0 +1,237 @@
+/*--------------------------------
+	layout
+--------------------------------*/
+
+.section {
+    position: relative;
+}
+
+.sectionInr {
+    padding: 80px 0;
+}
+
+.img {
+    width: 100%;
+}
+
+.sectionBgImg {
+    z-index: -1;
+}
+
+.backImg {
+    width: 100%;
+    height: 100%;
+    display: none;
+    @media (min-width: 1440px) {
+        display: block;
+    }
+}
+
+.recruitSection {
+    @media (min-width: 1024px) {
+        margin-bottom: 150px;
+    }
+    @media (min-width: 1440px) {
+        margin-bottom: 200px;
+    }
+}
+
+.recruitSectionTxt {
+    color: var(--white-color);
+    @media (min-width: 1024px) {
+        writing-mode: vertical-rl;
+        height: 340px;
+    }
+    & .wrapTxt {
+        display: block;
+        margin-block-start: 32px;
+        @media (min-width: 1024px) {
+            margin-block-start: 66px;
+        }
+        >p {
+            display: inline;
+        }
+    }
+}
+
+.overlayImg {
+    position: relative;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    @media (min-width: 1024px) {
+        max-width: 671px;
+    }
+}
+
+.largeImg {
+    width: 90%;
+    max-width: 671px;
+    @media (min-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.txtRed {
+    color: var(--accent-color);
+    font-size: 2.4rem;
+    font-weight: 400;
+    @media (min-width: 768px) {
+        font-size: 3.2rem;
+    }
+}
+
+.txtWrap {
+    display: inline;
+    text-align: center;
+    &>p {
+        display: inline;
+    }
+}
+
+.recruitSectionInr {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    row-gap: 40px;
+    padding: 40px 0;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 54px;
+        padding: 40px 0;
+        height: 550px;
+    }
+    @media (min-width: 1440px) {
+        height: 633px;
+    }
+}
+
+.sectionHead {
+    font-family: Zen Antique, serif;
+    font-size: 2.2rem;
+    letter-spacing: -0.05em;
+    @media (min-width: 768px) {
+        font-size: 2.4rem;
+    }
+}
+
+.recruitSectionInrLeft {
+    @media (min-width: 1440px) {
+        flex-shrink: 0;
+    }
+    & .illustImg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media (min-width: 1440px) {
+            bottom: 10rem;
+        }
+    }
+}
+
+.recruitSectionInrRight {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    @media (min-width: 768px) {
+        width: fit-content;
+        margin: 0;
+        padding-right: 15px;
+        flex-shrink: 0;
+    }
+    @media (min-width: 1440px) {
+        max-width: 660px;
+        padding-right: 120px;
+    }
+    & .illustImg {
+        display: none;
+        @media (min-width: 1440px) {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 7rem;
+        }
+    }
+}
+
+.sectionDetail {
+    max-width: 453px;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    @media (min-width: 768px) {}
+}
+
+.tile {
+    position: absolute;
+    left: 0;
+    bottom: -4rem;
+    max-width: unset;
+    display: flex;
+    z-index: 0;
+    @media (min-width: 768px) {
+        column-gap: 15px;
+    }
+    @media (min-width: 1024px) {
+        bottom: -15rem;
+    }
+    @media (min-width: 1440px) {
+        bottom: -22rem;
+    }
+}
+
+.table {
+    border: 1px solid #F5F5F5;
+    @media (min-width: 1024px) {
+        max-width: var(--medium-width);
+        margin: auto;
+    }
+}
+
+.tableItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #F5F5F5;
+    width: 100%;
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.tableHead {
+    border: 1px solid #FFFFFF;
+    background: #F5F5F5;
+    padding: 15px 20px;
+    width: 100%;
+    letter-spacing: -0.03em;
+    flex-shrink: 0;
+    @media (min-width: 768px) {
+        max-width: 183px;
+        padding: 15px 20px;
+        max-width: 146px;
+        padding: 15px 0 0 15px;
+    }
+}
+
+.tableBody {
+    padding: 15px 20px;
+    background: var(--white-color);
+    flex-grow: 1;
+    &:not(:last-of-type) {
+        border-bottom: 1px solid #F5F5F5;
+    }
+    & .telLink {
+        max-width: unset;
+        column-gap: 8px;
+    }
+    & .telLinkTxt {
+        color: var(--accent-color);
+        font-size: 2.4rem;
+        letter-spacing: 0.03em;
+        @media (min-width: 768px) {
+            font-size: 4rem;
+        }
+    }
+}

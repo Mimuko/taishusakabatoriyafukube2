@@ -1,0 +1,594 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/cooking.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "料理｜大衆居酒屋ふくべぇ";
+const siteDomein = "https://toriyafukubee.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="2720" height="700" src={siteDomein + '20240531170944945854.png'} alt="料理" class="pageHeaderImg" width="1440" height="450" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">
+                    <img src={siteDomein + '20240531170944143440.png'} alt="料理" width="172" height="88">
+                </h1>
+            </div>
+        </section>
+        <div class="section instSection sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240601193551599901.png'} alt="背景用の画像" class="img" width="1440" height="450">
+                <img src={siteDomein + '20240603224147995372.png'} alt="背景用の画像" class="pcImg instSectionBgImg" width="394" height="378">
+            </div>
+            <div class="sectionInr">
+                <div class="instSectionCont">
+                    <div class="instSectionContLeft">
+                        <img src={siteDomein + '20240601193551480834.png'} alt="季節の料理 きまぐれ料理" width="523" height="158">
+                        <p class="txt">季節の料理・気まぐれ料理が多数あります。<br>店長の気分や時期によってメニューが異なる楽しみがあります。</p>
+                    </div>
+                    <div class="instSectionContRight">
+                        <a href="https://www.instagram.com/fukubee_himeji/" rel="noopener" target="_blank" class="instSectionContLink">
+                            <img src={siteDomein + '20240601193551644871.png'} alt="Instagramのアイコン" width="132" height="131">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section recommendSection">
+            <div class="sectionHead">
+                <div class="sectionTtlImg">
+                    <img src={siteDomein + '20240523231235745148.png'} width="76" height="76" alt="赤い扇のアイコン画像" />
+                </div>
+                <h2 class="sectionTtl">
+                    <img class="img" src={siteDomein + '20240601193551477702.png'} alt="現在のおすすめメニュー" width="775" height="72" />
+                </h2>
+            </div>
+            <div class="sectionBg pcImg">
+                <div class="sectionBgImg">
+                    <img src={siteDomein + '20240601193551736058.png'} alt="背景用の画像" width="866" height="1270" class="img" />
+                </div>
+            </div>
+            <div class="recommendCont">
+                <div class="recommendContDetail">
+                    <div class="recommendContHead">
+                        <img class="pointImg" src={siteDomein + '20240603233650534214.png'} alt="ポイント" width="87" height="41">
+                        <div class="recommendContHeadWrap">
+                            <p class="txt">ふくべぇの</p>
+                            <p class="txtRed">おすすめ串</p>
+                        </div>
+                        <img class="recommendContHeadBg" src={siteDomein + '20240601193551122950.png'} alt="吹き出しの背景用画像" width="441" height="110">
+                    </div>
+                    <div class="recommendContTxt">
+                        <div class="recommendContTxtInr">
+                            <p class="txt">・せせり</p>
+                            <p class="txt">・つくね</p>
+                            <p class="txt">・皮</p>
+                        </div>
+                        <img src={siteDomein + '20240601193551773893.png'} alt="メニューの背景用画像"  width="414" height="132" class="recommendContTxtBgImg">
+                        <img class="stampImg" src={siteDomein + '20240601193551365240.png'} alt="絶品" width="176" height="190">
+                    </div>
+                </div>
+                <div class="recommendContMenu">
+                    <div class="illustImg">
+                        <img src={siteDomein + '20240601193551153948.png'} alt="焼き鳥のイラスト画像" width="181" height="161">
+                    </div>
+                    <img class="recommendContImg" src={siteDomein + '20240601193551667115.png'} alt="焼き鳥のイメージ画像" width="792" height="487">
+                    <div class="recommendContImgBg">
+                        <img class="img" src={siteDomein + '20240603233650926588.png'} alt="背景用の画像" width="674" height="456">
+                    </div>
+                </div>
+
+            </div>
+            <div class="recommendCont recommendContBottom">
+                <div class="recommendContDetail">
+                    <div class="recommendContHead">
+                        <img class="pointImg" src={siteDomein + '20240603233650876412.png'} alt="ポイント" width="87" height="41">
+
+                        <div class="recommendContHeadWrap">
+                            <p class="txt">ふくべぇの一品料理で</p>
+                            <p class="txtRed">注文が多い</p>
+                            <p class="txt">料理</p>
+                        </div>
+                        <img class="recommendContHeadBg" src={siteDomein + '20240601193551244974.png'} alt="吹き出しの背景用画像" width="441" height="110">
+                    </div>
+                    <div class="recommendContTxt">
+                        <div class="recommendContTxtInr">
+                            <p class="txt">・からあげ</p>
+                            <div class="txtWrap">
+                                <img src={siteDomein + '20240601193551170237.png'} alt="" width="31" height="31">
+                                <p class="txt">きも刺し</p>
+                                <p class="txt marker">（ダントツで人気）</p>
+                            </div>
+                            <p class="txt">・丹波地鶏の手羽唐</p>
+                        </div>
+                        <img src={siteDomein + '20240601193551773893.png'} alt="メニューの背景用画像"  width="414" height="132" class="recommendContTxtBgImg">
+                    </div>
+                </div>
+                <div class="recommendContMenu">
+                    <img class="recommendContImg" src={siteDomein + '20240601193551524584.png'} alt="提供お料理のイメージ画像" width="577" height="303">
+                    <img class="recommendContImg" src={siteDomein + '20240601193551876728.png'} alt="提供お料理のイメージ画像" width="452" height="257">
+                    <img class="recommendContImg" src={siteDomein + '20240601193551274551.png'} alt="提供お料理のイメージ画像" width="602" height="363">
+                    <div class="illustImg">
+                        <img src={siteDomein + '20240523225444957396.png'} alt="焼き鳥のイラスト画像" width="248" height="186">
+                    </div>
+
+                    <img class="recommendContImgBg" src={siteDomein + '20240603233650926588.png'} alt="背景用の画像" width="674" height="456">
+                </div>
+
+            </div>
+        </section>
+        <section class="section menuSection">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <h2 class="sectionTtl">
+                        <img src={siteDomein + '20240601193855220993.png'} alt="定番メニュー" width="331" height="57" />
+                    </h2>
+                    <p class="sectionHeadDesc">Menu</p>
+                </div>
+                <p class="txt readTxt">その他・一品料理や季節ものは店頭またはInstagramでチェックしてください。</p>
+                <nav class="anchorNav">
+                    <a href="#grilled" class="anchorNavLink">
+                        <p class="acchorNavTxt">串焼き
+                        </p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#onedish" class="anchorNavLink">
+                        <p class="acchorNavTxt">一品</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#sashimi" class="anchorNavLink">
+                        <p class="acchorNavTxt">刺身鳥刺し</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#ricedish" class="anchorNavLink">
+                        <p class="acchorNavTxt">ご飯もの</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#first" class="anchorNavLink">
+                        <p class="acchorNavTxt">とりあえず</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                    <a href="#dessert" class="anchorNavLink">
+                        <p class="acchorNavTxt">デザート</p>
+                        <img class="img" src={siteDomein + '20240603135626594297.png'} alt="右矢印の画像" width="24" height="24">
+                        <img class="hoverImg" src={siteDomein + '20240603135953329875.png'} alt="右矢印の画像" width="24" height="24">
+                    </a>
+                </nav>
+                <section id="grilled">
+                    <h3 class="menuHead">串焼き</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>かわ</p>
+                                <p class="price">143円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>もも</p>
+                                <p class="price">176円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>せせり(塩)</p>
+                                <p class="price">176円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>せせり(タレ)</p>
+                                <p class="price">176円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>せせり(梅しそ)</p>
+                                <p class="price">198円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>せせり(ゆず胡椒)</p>
+                                <p class="price">198円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>きも(タレ)</p>
+                                <p class="price">132円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>きも(ネギ塩)</p>
+                                <p class="price">154円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>こころ</p>
+                                <p class="price">154円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>砂ずり</p>
+                                <p class="price">143円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ささみ(塩)</p>
+                                <p class="price">143円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ささみ(タレ)</p>
+                                <p class="price">143円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ささみ(梅しそ)</p>
+                                <p class="price">165円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ささみ(ゆず胡椒)</p>
+                                <p class="price">165円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ささみ(チーズ)</p>
+                                <p class="price">165円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ささみ(わさび)</p>
+                                <p class="price">165円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ささみ(明太マヨ)</p>
+                                <p class="price">165円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ささみ(ピザソース)</p>
+                                <p class="price">198円</p>
+                            </div>
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>ぼんじり</p>
+                                <p class="price">176円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>手作りつくね</p>
+                                <p class="price">143円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>手作りつくね チーズ</p>
+                                <p class="price">165円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>手作りつくね 月見 （2本）</p>
+                                <p class="price">396円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>やげんなんこつ</p>
+                                <p class="price">176円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>やげん串</p>
+                                <p class="price">380円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>手羽先</p>
+                                <p class="price">209円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>はつもと</p>
+                                <p class="price">198円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>3本/焼鳥盛合せ</p>
+                                <p class="price">495円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>5本/焼鳥盛合せ</p>
+                                <p class="price">748円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>うずらたまご</p>
+                                <p class="price">143円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>アスパラベーコン</p>
+                                <p class="price">198円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>豚バラ</p>
+                                <p class="price">198円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>しいたけ</p>
+                                <p class="price">165円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>しろねぎ</p>
+                                <p class="price">165円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ししとう</p>
+                                <p class="price">165円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>鶏上腕二頭筋串焼(1本)</p>
+                                <p class="price">209円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>鶏はらみ</p>
+                                <p class="price">187円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>数量限定　ねぎみ</p>
+                                <p class="price">198円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240601193720273688.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </section>
+                <section id="onedish">
+                    <h3 class="menuHead">一品</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>厳選鳥のももレアステーキ</p>
+                                <p class="price">1045円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>2本/丹波地鶏の手羽唐</p>
+                                <p class="price">528円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>メンチカツ</p>
+                                <p class="price">253円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>姫路ひねぽん</p>
+                                <p class="price">495円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>コロッケ</p>
+                                <p class="price">231円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>3個/若鶏の唐揚げ</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>6個/若鶏の唐揚げ</p>
+                                <p class="price">792円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>12個/若鶏の唐揚げ</p>
+                                <p class="price">1540円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>温玉タルタルソース</p>
+                                <p class="price">110円</p>
+                            </div>
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>フライドポテト</p>
+                                <p class="price">352円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ピリ辛チョリソー</p>
+                                <p class="price">385円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>今日の漬物盛合せ</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>エイヒレ</p>
+                                <p class="price">440円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>チーズポテトもち</p>
+                                <p class="price">462円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ずりの唐揚げポン酢</p>
+                                <p class="price">462円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>手作りだし巻きたまご</p>
+                                <p class="price">528円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>昔ながらの赤ウィンナー</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>地鶏の照り焼き温玉ピザ</p>
+                                <p class="price">968円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>あさりの酒蒸し</p>
+                                <p class="price">572円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240601193720153110.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </section>
+                <section id="sashimi">
+                    <h3 class="menuHead">刺身鶏刺し</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>きも刺し</p>
+                                <p class="price">715円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>こころ刺し</p>
+                                <p class="price">715円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ずり刺し</p>
+                                <p class="price">715円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ささみ刺し</p>
+                                <p class="price">715円</p>
+                            </div>
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>むね肉ユッケ</p>
+                                <p class="price">748円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>鶏刺し3種盛り</p>
+                                <p class="price">1298円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>鶏刺し3種盛り ユッケあり</p>
+                                <p class="price">1375円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>鶏刺し5種盛り</p>
+                                <p class="price">1958円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>鶏刺し5種盛り ユッケあり</p>
+                                <p class="price">1489円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240601193720492592.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </section>
+                <section id="ricedish">
+                    <h3 class="menuHead">ご飯もの</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>ふくべぇの焼き鳥丼</p>
+                                <p class="price">748円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>白飯</p>
+                                <p class="price">176円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>白飯　大盛り</p>
+                                <p class="price">242円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>自家製醤油のTKG</p>
+                                <p class="price">462円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>だし茶漬け</p>
+                                <p class="price">462円</p>
+                            </div>
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>とり茶漬け</p>
+                                <p class="price">572円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>塩おにぎり（１個）</p>
+                                <p class="price">231円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>梅おにぎり（１個）</p>
+                                <p class="price">275円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>鮭おにぎり（１個）</p>
+                                <p class="price">275円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>明太おにぎり（１個）</p>
+                                <p class="price">275円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240601193720320722.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </section>
+                <section id="first">
+                    <h3 class="menuHead">とりあえず</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>えだまめ</p>
+                                <p class="price">242円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>キムチ</p>
+                                <p class="price">242円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>たたききゅうり梅肉和え</p>
+                                <p class="price">352円</p>
+                            </div>
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>チャンジャ</p>
+                                <p class="price">418円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>ポテトサラダ</p>
+                                <p class="price">440円</p>
+                            </div>
+                            <div class="menuGridItem">
+                                <p>おつまみキャベツ</p>
+                                <p class="price">209円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240601193721629434.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </section>
+                <section id="dessert">
+                    <h3 class="menuHead">デザート</h3>
+                    <div class="menuGrid">
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>バニラアイスクリーム</p>
+                                <p class="price">220円</p>
+                            </div>
+                        </div>
+                        <div class="menuGridWrap">
+                            <div class="menuGridItem">
+                                <p>抹茶アイス</p>
+                                <p class="price">220円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg">
+                        <img src={siteDomein + '20240601193721585614.png'} alt="" class="img" width="800" height="359">
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
